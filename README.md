@@ -1,4 +1,4 @@
-# Platform
+# LibraryPlatform
 
 Shared Rails engine infrastructure for the Ecosystems platform. Provides reusable concerns that all engines include to integrate with the host application.
 
@@ -7,7 +7,7 @@ Shared Rails engine infrastructure for the Ecosystems platform. Provides reusabl
 Add to your Gemfile:
 
 ```ruby
-gem "platform", path: "../../library/platform"
+gem "library-platform", path: "../../library/library-platform"
 ```
 
 Then:
@@ -18,27 +18,27 @@ bundle install
 
 ## Concerns
 
-### Platform::AppendMigrations
+### LibraryPlatform::AppendMigrations
 
 Included in an engine class to automatically append the engine's migrations to the host application's migration paths at boot time.
 
 ```ruby
 module MyEngine
   class Engine < ::Rails::Engine
-    include Platform::AppendMigrations
+    include LibraryPlatform::AppendMigrations
     isolate_namespace MyEngine
   end
 end
 ```
 
-### Platform::ApplicationRecordConcern
+### LibraryPlatform::ApplicationRecordConcern
 
 Included in an engine's `ApplicationRecord` base class to mark it as an abstract class.
 
 ```ruby
 module MyEngine
   class ApplicationRecord < ActiveRecord::Base
-    include Platform::ApplicationRecordConcern
+    include LibraryPlatform::ApplicationRecordConcern
   end
 end
 ```

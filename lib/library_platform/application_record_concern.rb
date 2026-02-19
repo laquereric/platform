@@ -2,7 +2,7 @@
 
 require "active_support/concern"
 
-module Platform
+module LibraryPlatform
   module ApplicationRecordConcern
     extend ActiveSupport::Concern
 

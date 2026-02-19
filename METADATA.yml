@@ -1,8 +1,8 @@
 ---
 type: library
-name: platform
+name: library-platform
 path: top/library
 gitlink: https://github.com/laquereric/platform.git
-module_name: Platform
+module_name: LibraryPlatform
 repo_urls:
   github: https://github.com/laquereric/platform

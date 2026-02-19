@@ -2,7 +2,7 @@
 
 require "active_support/concern"
 
-module Platform
+module LibraryPlatform
   module AppendMigrations
     extend ActiveSupport::Concern
 
