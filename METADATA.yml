@@ -3,5 +3,6 @@ type: library
 name: platform
 path: top/library
 gitlink: https://github.com/laquereric/platform.git
+module_name: Platform
 repo_urls:
   github: https://github.com/laquereric/platform
