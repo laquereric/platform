@@ -1,0 +1,7 @@
+---
+type: library
+name: platform
+path: top/library
+gitlink: https://github.com/laquereric/platform.git
+repo_urls:
+  github: https://github.com/laquereric/platform
